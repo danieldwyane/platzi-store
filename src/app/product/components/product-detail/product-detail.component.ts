@@ -71,6 +71,13 @@ export class ProductDetailComponent implements OnInit {
       error => {
         console.error(error);
       }
-    )
+    );
+  }
+
+  getFile() {
+    this.productsService.getFile()
+    .subscribe(content => {
+      console.log(content);
+    });
   }
 }
