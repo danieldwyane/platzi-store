@@ -61,4 +61,11 @@ export class ProductDetailComponent implements OnInit {
       console.log(product);
     });
   }
+
+  getRandomUsers() {
+    this.productsService.getRandomUsers()
+    .subscribe(users => {
+      console.log(users)
+    })
+  }
 }
