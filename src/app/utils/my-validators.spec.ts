@@ -1,6 +1,6 @@
 import { MyValidators } from './my-validators';
 
-describe('MyValidators', () => {
+xdescribe('MyValidators', () => {
   it('should create an instance', () => {
     expect(new MyValidators()).toBeTruthy();
   });
